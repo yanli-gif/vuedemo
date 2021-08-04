@@ -6,16 +6,37 @@ import '@/permission';
 import router from './router'
 import { Button, Select } from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import {Form,FormItem,Input} from 'element-ui';
-import {Message} from 'element-ui'
 import './css/iconfont.css'
+
+import {
+  Form,
+  FormItem,
+  Input,
+  Container,
+  Message,
+  Header,
+  Aside,
+  Main,
+  Menu,
+  Submenu,
+  MenuItem,
+  MenuItemGroup
+} from 'element-ui';
+
 
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
-
 Vue.use(Button)
 Vue.use(Select)
+Vue.use(Container)
+Vue.use(Header)
+Vue.use(Aside)
+Vue.use(Main)
+Vue.use(Menu)
+Vue.use(MenuItemGroup)
+Vue.use(Submenu)
+Vue.use(MenuItem)
 // import ElementUI from 'element-ui';
 // import 'element-ui/lib/theme-chalk/index.css';
 
@@ -30,4 +51,6 @@ new Vue({
   template: '<App/>'
 })
 // 把Message组件挂载到Vue原型上，通过this访问
+
 Vue.prototype.$Message=Message
+
